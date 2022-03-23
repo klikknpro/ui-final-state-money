@@ -2,57 +2,32 @@
 /* CSS RESET */
 /* === === === */
 
-/* box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* margins */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-picture {
+* {
   margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
 }
 
-/* set up the body */
-body {
-  line-height: 1.5;
-  min-height: 100vh;
-}
-
-/* work with images easier */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-  border: none;
-}
-
-/* list styles */
-ul[role="list"],
-ol[role="list"] {
+ol,
+ul,
+li {
   list-style: none;
+  display: block;
 }
 
-/* make forms easier */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-textarea {
-  resize: none;
+a,
+img {
+  border: none;
 }
 
 button,
@@ -61,16 +36,19 @@ a {
   color: inherit;
 }
 
-/* remove animations for whom they turn it off #accessibility */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+textarea {
+  resize: none;
 }
 
-/* CSS Reset end */
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important; /* safari, opera, chrome miatt */
+  border-radius: 0;
+}
+
+/* CSS reset */
+
+/* font-family: 'Roboto', sans-serif; */
