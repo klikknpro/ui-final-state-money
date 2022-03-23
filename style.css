@@ -152,7 +152,7 @@ article {
 }
 
 .title {
-  padding: 15px;
+  padding: 15px 0;
   font-size: 18px;
   font-weight: 400;
   border-bottom: 1px solid var(--clr-dark);
@@ -185,6 +185,12 @@ article button {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 
   font-size: 14px;
+}
+
+article button:hover {
+  background-color: var(--clr-dark);
+  border: 2px solid var(--clr-light);
+  color: var(--clr-light);
 }
 
 .arrow-icon {
