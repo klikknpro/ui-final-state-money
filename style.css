@@ -104,3 +104,44 @@ nav button {
   font-size: 36px;
   color: var(--clr-light);
 }
+
+section {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+article {
+  width: 300px;
+  height: 350px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--clr-light);
+
+  color: var(--clr-dark);
+}
+
+.sub {
+  width: 160px;
+  height: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 80px;
+  background-color: var(--clr-dark);
+
+  font-size: 80px;
+  font-weight: 400;
+  color: var(--clr-light);
+}

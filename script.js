@@ -41,6 +41,27 @@ const currencies = [
   },
 ];
 
-function init() {}
+const currencyCard = (currency) => {
+  return `
+    <article>
+      <p class="sub">${currency.sub}</p>
+      <h4 class="title">${currency.title}</h4>
+      <p class="text">${currency.text}</p>
+      <button>
+        Save
+        <span class="material-icons arrow-icon">arrow_forward</span>
+      </button>
+    </article>
+  `;
+};
+
+function init() {
+  const section = document.querySelector(".flexbox-container");
+
+  for (let i = 0; i < currencies.length; i++) {
+    const currency = currencies[i];
+    section.insertAdjacentHTML("beforeend", currencyCard(currency));
+  }
+}
 
 window.addEventListener("load", init);
